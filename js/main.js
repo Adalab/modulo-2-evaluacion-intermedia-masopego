@@ -5,7 +5,16 @@ const textAttemps = document.querySelector('.text-attemps');
 const submitButton = document.querySelector('.js-submit-button');
 submitButton.addEventListener('click', handlerButton);
 
+//Número de intentos
+let attemps = 0;
+
+// Valor del input
+
+const userData = userNumber.value;
+
 function handlerButton(ev) {
+  const userData = userNumber.value;
+  console.log(userData);
   // generar el número aleatorio
   // comprobar que el valor del input es el mismo que el del número aleatorio
   // Si nº mayor que  random, mensaje "Demasiado alto"
