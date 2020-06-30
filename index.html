@@ -15,15 +15,17 @@
     <main class="main--container">
       <h1>Adivina el número</h1>
       <form action="" method="POST">
-        <label for="user-number" class="label-input">
-          Introduce aquí tu número
-          <input
-            type="number"
-            name="number"
-            id="user-number"
-            class="user-number js-user-number"
-          />
-        </label>
+        <div class="user-number">
+          <label for="user-number">
+            Introduce aquí tu número
+            <input
+              type="number"
+              name="number"
+              id="user-number"
+              class="js-user-number"
+            />
+          </label>
+        </div>
         <button
           id="submit-button"
           class="submit-button js-submit-button"

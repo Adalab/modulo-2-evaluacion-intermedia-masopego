@@ -33,8 +33,14 @@ body {
   align-items: center;
 }
 
-.label-input {
+.user-number {
   font-weight: 700;
+  padding: 15px;
+}
+
+.user-number input {
+  border-radius: 5px;
+  border: 2px solid var(--color-neutral);
 }
 
 .submit-button {
@@ -46,7 +52,7 @@ body {
 }
 .text-clue {
   background-color: var(--color-light);
-  padding: 7px;
+  padding: 10px;
   border-radius: 20px;
   margin: 15px;
 }
