@@ -27,32 +27,40 @@ const textTryAttempt = 'Número de intentos: ';
 
 const userData = userNumber.value;
 
+// Función manejadora
 function handlerButton(ev) {
-  attemps++;
-  textAttemps.innerHTML = textTryAttempt + attemps++;
+  countAttemps();
 
-  const userData = userNumber.value;
-  console.log(userData);
-
-  if (userData < limitsNumber.up || userData > limitsNumber.down) {
-  }
-
-  // generar el número aleatorio
-  // comprobar que el valor del input es el mismo que el del número aleatorio
-  // Si nº mayor que  random, mensaje "Demasiado alto"
-  // Si nº menor que  random, mensaje "Demasiado bajo"
-  // Si nº igual que  random, mensaje "Has ganado"
-  // Si nº mayor que  random, mensaje "El número debe estar entre 1 y 100"
-  // Mostrar número de intentos
+  checkNumber();
 }
 
+// Obtener número aleatorio
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
 const randomNumber = getRandomNumber(limitsNumber.up);
 
-console.log(getRandomNumber(limitsNumber.up));
+console.log(randomNumber);
 
-console.log(limitsNumber.up);
-console.log(limitsNumber.down);
+// Contar los intentos
+
+function countAttemps() {
+  attemps++;
+  textAttemps.innerHTML = textTryAttempt + attemps;
+}
+
+// Comprobación de números
+function checkNumber() {
+  const userData = parseInt(userNumber.value);
+  console.log(userData);
+  if (userData < limitsNumber.down || userData > limitsNumber.up) {
+    textClue.innerHTML = textNumberNotValid;
+  } else if (userData === randomNumber) {
+    textClue.innerHTML = textNumberEqual;
+  } else if (userData < randomNumber) {
+    textClue.innerHTML = textNumberDown;
+  } else if (userData > randomNumber) {
+    textClue.innerHTML = textNumberUp;
+  }
+}
