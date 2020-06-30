@@ -17,10 +17,10 @@ const limitsNumber = {
 
 // Mensajes a mostrar
 
-const textNumberUp = 'Demasiado alto';
-const textNumberDown = 'Demasiado bajo';
-const textNumberEqual = 'Has ganado, campeona 😀';
-const textNumberNotValid = 'El número debe estar entre 1 y 100';
+const textNumberUp = 'Demasiado alto ⬆️';
+const textNumberDown = 'Demasiado bajo ⬇️';
+const textNumberEqual = 'Has ganado, campeona 😀 🎉';
+const textNumberNotValid = 'El número debe estar entre 1 y 100 🤯';
 const textTryAttempt = 'Número de intentos: ';
 
 // Valor del input
