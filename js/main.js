@@ -29,6 +29,8 @@ const userData = userNumber.value;
 
 // Función manejadora
 function handlerButton(ev) {
+  ev.preventDefault();
+
   countAttemps();
 
   checkNumber();
