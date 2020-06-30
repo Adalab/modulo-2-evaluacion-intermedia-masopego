@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivinar el número</title>
+    <link href="./sylesheet/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Adivina el número</h1>
+    <form action="" method="POST">
+      <label for="user-number">
+        Introduce aquí tu número
+        <input
+          type="text"
+          name="number"
+          id="user-number"
+          class="js-user-number"
+        />
+      </label>
+      <button
+        id="submit-button"
+        class="submit-button js-submit-button"
+        type="button"
+      >
+        Prueba
+      </button>
+    </form>
+
+    <div class="text-clue">
+      <p>Pista: Escribe el número y dale a Prueba</p>
+    </div>
+    <div class="text-attemps">
+      <p>Número de intentos: 0</p>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
